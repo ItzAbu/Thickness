@@ -48,6 +48,18 @@ namespace Thickness.classi.gestioneGioco.GestioneCoda
             return false;
         }
 
+        public User findUser(string nome, string cognome)
+        {
+            foreach (User u in users)
+            {
+                if(u.nome.Equals(nome) && u.cognome.Equals(cognome))
+                {
+                    return u;
+                }
+            }
+            return null;
+        }
+
         public int Count()
         {
             return users.Count;

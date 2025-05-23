@@ -8,26 +8,26 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
 {
     internal class Macchinario
     {
-        public int postiOccupati { get; set; }
+        public int postiLiberi { get; set; }
         public int postiTotali { get; }
 
         public Macchinario()
         {
             postiTotali = 5;
-            postiOccupati = 0;
+            postiLiberi = 5;
         }
 
-        public Macchinario(int postiOccupati)
+        public Macchinario(int postiLiberi)
         {
-            this.postiOccupati = postiOccupati;
+            this.postiLiberi = postiLiberi;
             postiTotali = 5;
         }
 
         public bool addUtente()
         {
-            if (postiOccupati < postiTotali)
+            if (postiLiberi > 0)
             {
-                postiOccupati++;
+                postiLiberi--;
                 return true;
             }
             else
@@ -38,9 +38,9 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
 
         public bool removeUtente()
         {
-            if (postiOccupati > 0)
+            if (postiLiberi < postiTotali)
             {
-                postiOccupati--;
+                postiLiberi++;
                 return true;
             }
             else
@@ -51,7 +51,7 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
 
         public void removeAll()
         {
-            postiOccupati = 0;
+            postiLiberi = 5 ;
         }
     }
 }

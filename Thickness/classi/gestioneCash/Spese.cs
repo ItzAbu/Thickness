@@ -19,7 +19,7 @@ namespace Thickness.classi.gestioneCash
         public Spese()
         {
             piani = new List<Piano> { new Piano() };
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 5; i++)
             {
                 piani[0].AddMacchinario();
             }
@@ -157,7 +157,7 @@ namespace Thickness.classi.gestioneCash
             int utenti = 0;
             foreach (var i in piani)
             {
-                utenti += i.Macchinari.Count;
+                utenti += i.getUser();
             }
             return utenti;
         }

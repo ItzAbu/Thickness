@@ -107,6 +107,14 @@
     <None Include="Immagini\sfondoReception2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Immagini\rfeception.png" />
+    <None Include="Immagini\piano 2.png" />
+    <None Include="Immagini\panca.png" />
+    <None Include="Immagini\start2.png" />
+    <None Include="Immagini\personaggi\persona 1.png" />
+    <None Include="Immagini\personaggi\persona 3.png" />
+    <None Include="Immagini\personaggi\persona 4.png" />
+    <None Include="Immagini\telefono.png" />
     <Content Include="script\utenti.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

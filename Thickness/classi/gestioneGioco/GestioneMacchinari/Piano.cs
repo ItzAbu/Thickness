@@ -34,7 +34,7 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
 
         public bool AddMacchinario()
         {
-            if (Macchinari.Count < 30)
+            if (Macchinari.Count < 13)
             {
                 Macchinari.Add(new Macchinario());
                 return true;
@@ -50,7 +50,7 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
             int utenti = 0;
             foreach (var i in Macchinari)
             {
-                utenti += i.postiOccupati;
+                utenti += i.postiLiberi;
             }
             return utenti;
 
@@ -75,5 +75,6 @@ namespace Thickness.classi.gestioneGioco.GestioneMacchinari
                 i.removeAll();
             }
         }
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
@@ -89,28 +90,7 @@ namespace Thickness.classi
         }
 
         bool flag = false;
-        public void PayMonthlyFeeOnMonthStart(long spent)
-        {
-            DateTime now = this.time.TimeStarted();
-            DateTime lastUpdate = this.time.TimeUpdated();
-
-            if (flag)
-            {
-                if (now.Day != lastUpdate.Day)
-                {
-                    flag = false;
-                }
-                return;
-            }
-
-            // Check if it's a new month  
-            if (now.Month == lastUpdate.Month + 1 && now.Day == lastUpdate.Day)
-            {
-                this.removeCash(spent); // Example monthly fee amount multiplied by months passed  
-                flag = true;
-                MessageBox.Show("Pagamento mensile eseguito con successo: " + spent + "€");
-            }
-        }
+        
 
         public void addRefund(long spent)
         {
@@ -119,7 +99,7 @@ namespace Thickness.classi
 
             if (flag)
             {
-                if (now.Day != lastUpdate.Day)
+                if (now.Day != 1)
                 {
                     flag = false;
                 }
@@ -127,14 +107,72 @@ namespace Thickness.classi
             }
 
             // Check if it's the end of the month  
-            if (now.Month == lastUpdate.Month && now.Day == DateTime.DaysInMonth(now.Year, now.Month))
+            if (now.Day == 1 && !flag)
             {
                 this.removeCash(spent); // Deduct monthly fee  
                 flag = true;
                 MessageBox.Show("Pagamento mensile eseguito con successo a fine mese: " + spent + "€");
             }
         }
-        
+
+        /*public void PayMonthlyFeeOnMonthStart(long rentAmount)
+        {
+            DateTime now = this.time.TimeUpdated();
+            DateTime lastUpdate = this.time.TimeStarted();
+
+            if (flag)
+            {
+                if (now.Day != DateTime.DaysInMonth(lastUpdate.Year, lastUpdate.Month))
+                {
+                    MessageBox.Show("Qui");
+                    flag = false;
+                }
+                return;
+            }
+
+
+            // Check if it's the last day of the month  
+            if (now.Day == DateTime.DaysInMonth(now.Year, now.Month) && !flag)
+            {
+                this.removeCash(rentAmount); // Deduct rent amount  
+                flag = true;
+                MessageBox.Show("Affitto pagato con successo: " + rentAmount + "€");
+            }
+        }*/
+
+        public void PayMonthlyFeeOnMonthStart(long rentAmount, bool doit)
+        {
+            this.removeCash(rentAmount); 
+            MessageBox.Show("Affitto pagato con successo: " + rentAmount + "€");
+            flag = false;
+        }
+
+        bool payed = false;
+
+        public void PayMonthlyFeeOnMonthStart(long rentAmount)
+        {
+
+            DateTime now = this.time.TimeUpdated();
+            DateTime lastUpdate = this.time.TimeStarted();
+            if (payed)
+            {
+                if(now.Day != 1)
+                {
+                    payed = false;
+                }
+                return;
+            }
+
+            
+
+            // Check if it's the first day of the month  
+            if (now.Day == 1 && !payed)
+            {
+                this.removeCash(rentAmount); // Deduct rent amount  
+                payed = true;
+                MessageBox.Show("Affitto pagato con successo: " + rentAmount + "€");
+            }
+        }
 
 
 

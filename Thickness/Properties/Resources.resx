@@ -121,19 +121,43 @@
   <data name="Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Immagini\Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sfondoReception" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Immagini\sfondoReception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NickName2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\NickName2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Nickname" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Immagini\Nickname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piano 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\piano 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\start2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\panca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rfeception" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\rfeception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persona 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\personaggi\persona 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rfeception1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\rfeception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sfondoReception2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Immagini\sfondoReception2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NickName2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Immagini\NickName2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nickname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\Nickname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rfeception" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Immagini\rfeception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sfondoReception" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\sfondoReception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persona 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\personaggi\persona 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persona 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\personaggi\persona 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Immagini\telefono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
