@@ -11,25 +11,6 @@ using Thickness.classi.gestionePersonale.abbonamenti;
 namespace Thickness
 {
 
-    //Todo:
-    /*
-     * Creare tutto il setup del salvataggio file
-     * 
-     * Poter aggiungere un utente manualmente, 
-     * Aggiungere la possibilita di cercare un utente in particolare
-     * possibilita eliminare un utente o modificare (modificare solo quelli messi manualmente)
-     * salvare per ogni utente manualmente iscritto un file json ("Iscrizione_(cod_f).json") e tutti i dati dentro
-     * 
-     * Fixare sfondo del piano in modo che sia uguale per tutti
-     * 
-     * 179
-     * 
-     * Sistemare la pagina del piano, mettendo 30 picturebox
-     * 
-     * Setup grafica (Chiedere a Matteo)
-     * 
-     */
-
     public partial class Form1 : Form
     {
         ThicknessApp Thickness;
@@ -739,9 +720,6 @@ namespace Thickness
 
 
                 tabControl1.TabPages.Add(newTabPage);
-
-                MessageBox.Show(macchinari.Count.ToString());
-                MessageBox.Show(sfondoPiano.Controls.Count.ToString());
                 Piani.Text = gameUsers.getPiani().ToString();
                 return;
             }
